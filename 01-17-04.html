@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style type="text/css">
+        .photo{
+            width: 100%;
+            height: 250px;
+            background-color: mediumturquoise;
+            line-height: 250px;
+            text-align: center;
+            /* overflow: hidden; */
+        }
+
+        img{
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="bg-primary text-white p-5 text-center">
+        <h1 class="mb-4">My First bootstrap page</h1>
+        <p>Resize this reponsive page to see the effect!</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ps-3">
+        <ul class="navbar-nav fw-bold">
+            <li class="nav-item"><a href="#" class="nav-link active">HTML</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CSS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">JAVASCRIPT</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">JQUERY</a></li>
+        </ul>
+    </nav><!-- navbar -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>About Me</h2>
+                <h5>Photo of me :</h5>
+                <div class="photo"><img src="img/icon01.png" alt="icon01"></div>
+                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <h3 class="mt-5">Some LINK</h3>
+                <ul class="nav flex-column nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active">HTML</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CSS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">JAVASCRIPT</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">JQUERY</a></li>
+                </ul>
+                <hr>
+            </div><!-- col-sm-4 -->
+
+
+            <div class="col-sm-8">
+                <h2>Title HEADING</h2>
+                <h5>title description 24.01.17</h5>
+                <div class="photo">이미지넣기</div>
+                <p class="mt-2 text-justify">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur voluptate quam fuga porro magni
+                    temporibus dolor placeat sint voluptatem eveniet est, illum qui alias dolorum dolorem. Esse maxime
+                    et perferendis.
+                </p>
+
+                <h2 class="mt-5">Title HEADING</h2>
+                <h5>title description 24.01.17</h5>
+                <p class="mt-2 text-justify">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur voluptate quam fuga porro magni
+                    temporibus dolor placeat sint voluptatem eveniet est, illum qui alias dolorum dolorem. Esse maxime
+                    et perferendis.
+                </p>
+                <table class="table table-bordered table-hover text-center">
+                    <thead>
+                        <tr class="table-primary">
+                            <th>이름</th>
+                            <th>전화번호</th>
+                            <th>주소</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>홍길동</td>
+                            <td>111-1111</td>
+                            <td>경기도 구리</td>
+                        </tr>
+                        <tr>
+                            <td>김길동</td>
+                            <td>222-2222</td>
+                            <td>서울시 강남</td>
+                        </tr>
+                        <tr>
+                            <td>박길동</td>
+                            <td>333-3333</td>
+                            <td>서울시 마포</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div><!-- col-sm-8 -->
+        </div><!-- row -->
+    </div><!-- container -->
+
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <p>Footer Footer</p>
+    </footer>
+</body>
+
+</html>
