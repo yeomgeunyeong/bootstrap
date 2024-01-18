@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <style type="text/css">
+        .navbar-brand {
+            text-transform: uppercase;
+        }
+
+        .carousel-item {
+            width: 100%;
+            height: 40rem;
+            /* height: 32rem; */
+            /* 16px * 32 =512 (16px는 기본 글자크기 ) */
+        }
+
+        .carousel-item.img1 {
+            background: url("img/KakaoTalk_20240118_100435875.jpg") no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .carousel-item.img2 {
+            background: url("img/KakaoTalk_20240118_100435875_01.jpg") no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .carousel-item.img3 {
+            background: url("img/KakaoTalk_20240118_100435875_02.jpg") no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+
+
+        .marketing {
+            margin-top: 4rem;
+        }
+
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+        }
+
+        .marketing .col-lg-4 h2 {
+            margin-top: 0.5rem;
+        }
+
+        .marketing .col-lg-4 h2 p {
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+        }
+
+        .head1 {
+            width: 140px;
+            height: 140px;
+            background: url("img/IMG_9092.JPG") no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .head2 {
+            width: 140px;
+            height: 140px;
+            background: url("img/IMG_9093.JPG") no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .head3 {
+            width: 140px;
+            height: 140px;
+            background: url("img/IMG_9096.JPG") no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .divider {
+            margin: 5rem 0;
+        }
+
+
+
+        .feature{
+            padding: 1.5rem;
+        }     
+
+        .feature h2{
+            font-size: 3rem;
+            padding-top: 3rem;
+        }       
+
+        .feature p{
+            margin-top: 2rem;
+            text-align: justify;
+        }   
+
+        .feature img{
+            width: 100%;
+            height: 400px;
+            padding-top: 2rem;
+        }        
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="container-fluid px-3">
+                <a href="#" class="navbar-brand">Carousel</a>
+
+                <button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarCollapse"> -->
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link disabled">Disable</a></li>
+                    </ul>
+
+                    <form action="#" class="d-flex">
+                        <input type="search" placeholder="Search" class="form-control me-2">
+                        <button type="submit" class="btn btn-outline-success">Search</button>
+                    </form>
+                </div>
+            </div><!-- container-fluid -->
+        </nav><!-- navbar -->
+    </header><!-- header -->
+
+    <main id="main">
+        <div class="carousel slide" id="myCarousel" data-ride="carousel">
+
+            <ol class="dots carousel-indicators">
+                <li type="button" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li type="button" data-target="#myCarousel" data-slide-to="1"></li>
+                <li type="button" data-target="#myCarousel" data-slide-to="2"></li>
+            </ol><!-- dots -->
+
+            <div class="img_inner carousel-inner">
+                <div class="img1 carousel-item active">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Example Headline 1</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ipsa cum explicabo, commodi
+                                quia perferendis repellat veniam rerum, <br>deleniti cumque quae quisquam iusto incidunt
+                                quasi. Quaerat, laborum? Aperiam voluptate quas sequi!
+                            </p>
+                            <p>
+                                <a href="#" class="btn btn-success btn-lg">Sign Up Today</a>
+                            </p>
+                        </div>
+                    </div><!-- container -->
+                </div><!-- img1 -->
+                <div class="img2 carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1>Example Headline 2</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id blanditiis quibusdam
+                                molestias beatae quas adipisci sequi, <br>et porro sapiente quae consectetur! Quaerat
+                                possimus eaque atque, minus velit itaque? Voluptates, libero.
+                            </p>
+                            <p>
+                                <a href="#" class="btn btn-success btn-lg">Sign Up Today</a>
+                            </p>
+                        </div>
+                    </div><!-- container -->
+                </div><!-- img2 -->
+                <div class="img3 carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Example Headline 3</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Odit harum ipsum, obcaecati
+                                numquam iste voluptatem repellendus voluptatibus incidunt <br>voluptates eaque animi minus
+                                nisi, omnis maiores! Molestias ab eos consequuntur. Distinctio?
+                            </p>
+                            <p>
+                                <a href="#" class="btn btn-success btn-lg">Sign Up Today</a>
+                            </p>
+                        </div>
+                    </div><!-- container -->
+                </div><!-- img3 -->
+            </div><!-- img_inner -->
+
+            <button class="carousel-control-prev" data-target="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-target="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div><!-- carousel slide -->
+
+        <div class="container marketing">
+            <div class="row text-center row1 pt-5">
+                <div class="col-lg-4">
+                    <div class="head1 bg-dark rounded-circle m-auto"></div>
+                    <h2>Heading</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium laborum eius quasi.
+                        Debitis ipsam, facere hic, possimus deserunt molestias fugiat labore, ex perspiciatis aut ab non
+                        atque blanditiis natus odio!
+                    </p>
+                    <p><a href="#" class="btn btn-success">View details&raquo;</a></p>
+                </div><!-- col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="head2 bg-dark rounded-circle m-auto"></div>
+                    <h2>Heading</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium laborum eius quasi.
+                        Debitis ipsam, facere hic, possimus deserunt molestias fugiat labore, ex perspiciatis aut ab non
+                        atque blanditiis natus odio!
+                    </p>
+                    <p><a href="#" class="btn btn-success">View details&raquo;</a></p>
+                </div><!-- col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="head3 bg-dark rounded-circle m-auto"></div>
+                    <h2>Heading</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium laborum eius quasi.
+                        Debitis ipsam, facere hic, possimus deserunt molestias fugiat labore, ex perspiciatis aut ab non
+                        atque blanditiis natus odio!
+                    </p>
+                    <p><a href="#" class="btn btn-success">View details&raquo;</a></p>
+                </div><!-- col-lg-4 -->
+            </div><!-- row1-->
+            <hr class="divider">
+
+            <div class="row row2 feature">
+                <div class="col-lg-7">
+                    <h2>First featurette heading. <br>It'll blow your mind.</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam fugiat quod hic, nam maxime
+                        veniam ex natus laborum. Nulla nemo excepturi, placeat veniam omnis aut laudantium perferendis
+                        quisquam culpa atque.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img src="img/KakaoTalk_20240118_114952203.jpg" alt="img">
+                </div>
+            </div><!-- row2 -->
+            <hr class="divider">
+
+            <div class="row row3 feature">
+                <div class="col-lg-5">
+                    <img src="img/KakaoTalk_20240118_114952203_01.jpg" alt="img">
+                </div>
+                <div class="col-lg-7">
+                    <h2>First featurette heading. <br> It'll blow your mind.</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam fugiat quod hic, nam maxime
+                        veniam ex natus laborum. Nulla nemo excepturi, placeat veniam omnis aut laudantium perferendis
+                        quisquam culpa atque.
+                    </p>
+                </div>
+            </div><!-- row3 -->
+            <hr class="divider">
+
+            <div class="row row4 feature pb-5">
+                <div class="col-lg-7">
+                    <h2>First featurette heading. <br>It'll blow your mind.</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam fugiat quod hic, nam maxime
+                        veniam ex natus laborum. Nulla nemo excepturi, placeat veniam omnis aut laudantium perferendis
+                        quisquam culpa atque.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img src="img/KakaoTalk_20240118_114952203_02.jpg" alt="img">
+                </div>
+            </div><!-- row4 -->
+            <!-- <hr class="divider"> -->
+        </div><!-- marketing -->
+
+        <footer id="footer" class="bg-dark py-3 text-white mt-5">
+            <div class="container pt-3">
+                <p class="float-end">
+                    <a href="#header" class="btn btn-outline-success">Back To Top</a>
+                </p>
+                <p>
+                    copyright &copy; 2024 company, INC
+                </p>
+            </div>
+        </footer><!-- footer -->
+    </main><!-- main -->
+</body>
+
+</html>
